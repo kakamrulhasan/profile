@@ -33,10 +33,19 @@ class UserProfilePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           
           children: [
-            CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage('assets/gun.jpg'),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.amber,
+                borderRadius: BorderRadius.circular(60),
+                image: DecorationImage(image: AssetImage('assets/gun.jpg')),
+              ),
             ),
+            // CircleAvatar(
+            //   radius: 60,
+            //   backgroundImage: AssetImage('assets/gun.jpg'),
+            // ),
             SizedBox(height: 16),
             Text(
               'John kaku',
