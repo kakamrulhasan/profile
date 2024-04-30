@@ -22,7 +22,9 @@ class UserProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile',),
+        title: Text('Profile',
+        style: TextStyle(fontWeight: FontWeight.bold),),
+        
         centerTitle: true,
         
       ),
@@ -37,12 +39,12 @@ class UserProfilePage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             Text(
-              'John Doe',
+              'John kaku',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 8),
             Text(
-              'john.doe@example.com',
+              'john.kaku@gmail.com',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             SizedBox(height: 24),
